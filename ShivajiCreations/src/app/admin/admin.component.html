@@ -1,0 +1,36 @@
+
+<section class="customer_management">
+    <button class="btn btn-danger" (click)="createcustomer()">Create Customer</button>
+    <button class="btn btn-success" (click)="searchcustomer()">Search Customer</button>
+</section>
+
+
+<section class="searchbox">
+    <input type="text" [(ngModel)]="txtsearch" name="txtsearch" placeholder=" Search"  (input)="onChangeEvent($event)">
+</section>
+
+<section class="hot_orders">
+    <table>
+        <thead>
+            <tr>
+
+                <th>Order Number</th>
+                <th>Name</th>
+                <th>Perticulars</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let item of measure">
+                <td>{{item.order_number}}</td>
+                <td>{{item.cust_name}}</td>
+                <td>{{item.particulars}}</td>
+                <td>{{item.date | date:'dd/MM/yyyy'}}</td>
+                <td><button class="submit_button"><ion-icon name="checkmark-circle-outline"
+                            size="large"></ion-icon></button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>

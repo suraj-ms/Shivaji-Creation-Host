@@ -1,0 +1,83 @@
+* {
+    font-size: 1.2rem;
+}
+
+.customer_management{
+    margin: 50px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.searchbox{
+    text-align: center;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.searchbox input{
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(182, 182, 182);
+}
+
+
+.hot_orders {
+    width: 80vw;
+    margin: 2rem auto;
+    overflow-x: scroll;
+
+}
+
+.hot_orders table {
+    width: 100%;
+}
+
+.hot_orders table tr {
+    border-bottom: 1px solid #7c7c7c;
+    text-align: center;
+
+}
+
+
+.hot_orders table tr th {
+    border-bottom: 3px solid #525151;
+}
+
+.hot_orders table tr:nth-of-type(even) {
+    background-color: #d6d6d6;
+}
+
+td,
+th {
+    padding: 12px 15px;
+
+}
+
+tr th {
+    background-color: #44af9a;
+}
+
+.submit_button {
+    width: 2vw;
+}
+
+
+
+td button {
+    border: none;
+    background-color: Transparent;
+}
+
+td button:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 480px) {
+    .hot_orders {
+        width: 95vw;
+        margin: 0.5rem auto;
+    }
+  }

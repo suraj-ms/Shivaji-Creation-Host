@@ -1,0 +1,57 @@
+<style>
+  .v {
+
+    border: 3px solid green;
+
+  }
+
+  .inv {
+
+    border: 3px solid red;
+
+  }
+</style>
+
+<div class="login_pg">
+  <img class="loginbrand" src="../../assets/img/logo/shivajiLogo.png" alt="" srcset="">
+
+  <div class="background1">
+    <span class="span span1"></span>
+    <span class="span span2"></span>
+    <span class="span span3"></span>
+    <span class="span span4"></span>
+  </div>
+
+  <div class="background2">
+    <span class="span span1"></span>
+    <span class="span span2"></span>
+    <span class="span span3"></span>
+    <span class="span span3"></span>
+    <span class="span span4"></span>
+    <span class="span span5"></span>
+    <span class="span span6"></span>
+  </div>
+
+
+  <form class="login_form" #f="ngForm" (ngSubmit)="validate(f.value)">
+    <h2>Login Here</h2>
+    <br>
+    <div class="form-floating mb-3">
+      <input type="text" class=" textview form-control" ngModel name="username" #u="ngModel" id="floatingInput"
+        placeholder="Username" autofocus>
+      <label for="floatingInput"><ion-icon name="person-outline"></ion-icon>&nbsp;| &nbsp;Usernames</label>
+    </div><br>
+    <div class="form-floating">
+      <input type="password" ngModel name="password" class="textview form-control" id="floatingPassword"
+        placeholder="Password">
+      <label class="label" for="floatingPassword"> <ion-icon name="lock-closed-outline"></ion-icon>&nbsp;| &nbsp;
+        Password</label>
+    </div><br>
+    <input type="submit" value="login" class="btn btn-success">
+    <!-- <div *ngIf="isLoggedIn && !isNewUser"></div> -->
+
+    <span class="text-danger"> {{status}}</span>
+
+  </form>
+
+</div>

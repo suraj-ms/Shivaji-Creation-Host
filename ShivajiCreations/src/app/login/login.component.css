@@ -1,0 +1,134 @@
+
+.background1{
+    position: absolute;
+    top: 20px;
+    /* background-color: aqua; */
+    left: 5%;
+    width: 50vw;
+    height:100vh;
+    rotate: 60deg;
+}
+
+.background2{
+    position: absolute;
+    top: 20px;
+    /* background-color: aqua; */
+    left: 60%;
+    width: 50vw;
+    height:100vh;
+    rotate: 60deg;
+}
+
+.span{
+    display: inline-block;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px;
+}
+
+.span1{
+    top: 25%;
+    width: 300px;
+    height:  300px;
+}
+
+.span2{
+    top: 30%;
+    right: 200px;
+    width: 80px;
+    height:  30%;
+}
+
+.span3{
+    top: 35%;
+    width: 20%;
+    height:  20%;
+}
+
+.span4{
+    top: 45%;
+    width: 15%;
+    height:  15%;
+}
+
+.span5{
+    top: 15%;
+    width: 15%;
+    height:  15%;
+}
+.span6{
+    top: 6%;
+    left: 2%;
+    width: 15%;
+    height:  15%;
+}
+
+.loginbrand{
+    position: relative;
+    bottom: 10%;
+    width: 30%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.login_pg {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(66, 100, 171);
+    background: linear-gradient(90deg, rgba(66, 100, 171, 1) 0%, rgba(9, 39, 121, 1) 35%, rgba(0, 147, 255, 1) 100%);
+    /* background-color: #164B60;  */
+}
+
+h2{
+    /* color: white; */
+    font-size: 2.5em;
+}
+
+
+.login_form {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 20px rgb(142, 142, 142);
+    padding: 20px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 25px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.login_form .textview {
+    background: none;
+    border: 1px solid black;
+}
+
+.btn-success{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.label::after{
+    background:none;
+}

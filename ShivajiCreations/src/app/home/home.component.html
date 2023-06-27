@@ -1,0 +1,25 @@
+
+
+
+
+<label>Enter Order No</label><input type="text" placeholder="Order"/>
+
+<body>
+
+
+<div>
+
+<div *ngFor = "let item of data">
+    {{item.orderno}}
+    
+    {{item.name}}
+    {{item.particulars }}
+    {{item.date | date:'dd/MM/yyyy'}}
+<hr/>
+
+</div>
+
+
+</div>
+
+</body>

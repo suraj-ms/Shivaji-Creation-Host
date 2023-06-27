@@ -1,0 +1,69 @@
+<style>
+
+.frmv{
+    background-color: rgb(198, 222, 215);
+}
+
+
+.frmi{
+    background-color: rgb(80, 207, 169);
+}
+.v{
+    
+        border:3px solid green;
+    
+    }
+    
+    .inv{
+    
+    border:3px solid red;
+    
+    }
+    </style>
+    
+
+<form class="login_form" #f="ngForm" (ngSubmit)="insertcustomer(f.value)">
+    <div class="container cust_search  ">
+        <div class="row cust_info">
+            <div class="col col-lg-4 col-sm-12 ">
+                <div class="form-floating mb-3">
+                    <input type="text" required pattern="[0-9]+"  #u="ngModel" class="form-control" ngModel name="order_number" id="ordid" placeholder="Order Number" [class.inv]="u.invalid && u.touched"  [class.v]='u.valid && u.touched'>
+                    <label for="ordid"><i class="fas fa-search"></i>Order Number</label>
+                </div>
+            </div>
+            <div class="col col-12 col-lg-4 col-sm-12 ">
+                <div class="form-floating mb-3">
+                    <input type="text" required class="form-control" ngModel name="cust_name" id="floatingInput" placeholder="Name">
+                    <label for="floatingInput"><i class="fas fa-user"></i> Name</label>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-sm-12 ">
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" ngModel name="mobile" id="floatingInput" placeholder="Phone Number" pattern="[6-9]{1}[0-9]{9}">
+                    <label for="floatingInput"><i class="fas fa-phone"></i> Phone Number</label>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <div class="row">
+            <div class="col cust_info_nav ">
+                <input type="radio" class="mt-4 " id="measurment" (change)="checkStatus($event)" name="fav_language" value="measurment">
+                <label class="my-3 me-5 ms-1" for="measurment">Measurment</label><br>
+                <input type="radio" class="mt-4 " id="bill" name="fav_language" value="bill">
+                <label class="my-3 ms-1" for="bill">Bill</label><br>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col cust_info_submit_btn ">
+                <input type="submit" [disabled]="!f.valid" [class.frmv]="!f.valid" (click)="checkStatus($event)" [class.frmi]='f.valid' class="mx-3 my-3" value="Measurement">
+                <input type="reset" class="mx-3 my-3" value="Bill Info">
+            </div>
+        </div>
+
+    </div>
+</form>
+
+{{status}}
+

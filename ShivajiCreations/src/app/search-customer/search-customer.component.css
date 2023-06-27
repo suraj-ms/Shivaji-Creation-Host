@@ -1,0 +1,35 @@
+.cust_search {
+    position: relative;
+    top: 10vh;
+}
+
+.cust_info input {
+
+    /* text-align: center; */
+    text-transform: capitalize;
+    /* margin: 3% 0%; */
+    border-radius: 25px;
+}
+
+.cust_info_nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cust_info_submit_btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cust_info_submit_btn input {
+    padding: 1.5%;
+    background-color: rgb(80, 207, 169);
+    border-radius: 15px;
+
+}
+
+.cust_info_submit_btn :last-child {
+    background-color: cornflowerblue;
+}

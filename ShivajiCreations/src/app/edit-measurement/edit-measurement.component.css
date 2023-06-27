@@ -1,0 +1,353 @@
+body {
+    background-color: rgb(204, 204, 204);
+    box-sizing: border-box;
+    /* background-color: rgb(167, 23, 23) !important; */
+}
+
+.dropbtn {
+    display: none;
+}
+
+.nav_index {
+    position: fixed;
+    bottom: 0%;
+    right: 1%;
+    z-index: 2;
+}
+
+.a img {
+
+    display: block;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 50%;
+    padding: 12px;
+    margin: 10px;
+    width: 3.5rem;
+    height: 3.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.a img:active {
+    transform: scale(0.8);
+}
+
+/* ****************************************** */
+
+.perticular_index {
+    position: absolute;
+    left: 50%;
+    width: max-content;
+    /* background-color: #2a1f62  ; */
+    transform: translateX(-50%);
+}
+
+.perticular_index a {
+
+    margin: 4px 10px;
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.perticulars-name {
+
+    text-decoration: none;
+    background-color: rgb(170, 170, 170);
+    border: 1px solid black;
+    color: black;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.perticular_index a:hover {
+    transform: scale(1.2);
+    box-shadow: 4px 3px #c0c0c0;
+    color: black;
+}
+
+.submit_btn {
+    margin: 5px;
+    position: fixed;
+    bottom: 2%;
+    left: 5%;
+    width: 10%;
+    height: 8%;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(132, 209, 132);
+    z-index: 50;
+}
+
+.measurement {
+    display: flex;
+}
+
+.measurement-edit {
+    position: relative;
+    margin: 90px 0px;
+    padding: 9px 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+    width: 400px;
+    height: 90vh;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.border_bottom {
+
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.measurement-edit .measurement_list_items {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.measurement-edit .measurement_list_items input {
+    width: 100px;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+.arm {
+    display: flex;
+    justify-content: center;
+}
+
+.full_arm,
+.half_arm {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.rf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.rf span,
+.kurta span {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.measurement-display {
+    margin: 90px 0px;
+    padding: 9px;
+    width: 100%;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.customer_description {
+    position: relative;
+}
+
+.customer_description .cust_ord_no {
+
+    position: absolute;
+
+
+}
+
+.customer_description .cust_name {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+
+}
+
+.customer_description .cust_phno {
+
+    position: absolute;
+    right: 15px;
+
+
+}
+
+.customer_description span {
+
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: 700;
+
+
+}
+
+
+
+.topM {
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+.topM span hr {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+.shirtM {
+
+    background-color: rgb(247, 186, 186);
+
+}
+
+.trouserM {
+
+    background-color: rgb(252, 250, 162);
+    ;
+
+}
+
+.suitM {
+
+    background-color: rgb(184, 185, 250);
+
+}
+
+.safariM {
+
+    background-color: rgb(182, 255, 215);
+
+}
+
+.bandiM {
+
+    background-color: rgb(197, 255, 182);
+
+}
+
+.kurtaM {
+
+    background-color: rgb(221, 181, 240);
+
+}
+
+.pyjamaM {
+
+    background-color: rgb(250, 184, 222);
+
+}
+
+
+
+.measurement-display-by-perticulars {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1070px) {
+    .dropdown {
+        z-index: 1000;
+    }
+
+    .dropbtn {
+        width: 110px;
+        background-color: #3498db;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        display: block;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(231, 230, 230);
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: transparent;
+        border-radius: 8px;
+    }
+
+    .submit_btn {
+        left: 0;
+        margin: 0 auto;
+        width: 70vw;
+    }
+
+    .measurement-edit {
+        width: 100vw;
+    }
+
+    .measurement-display {
+        display: none;
+    }
+
+    .show {
+        display: block;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .submit_btn {
+        margin: 0 25px;
+    }
+
+
+}
