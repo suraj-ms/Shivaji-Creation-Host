@@ -1,6 +1,6 @@
 # Shivaji Creation
 
-## It is a customer and staff managing to with automated billing
+## It is a customer and staff managing tool with automated billing
 
 ![Home Page](readmeImages/home.PNG)
 ![Cutomer](readmeImages/customer.PNG)
